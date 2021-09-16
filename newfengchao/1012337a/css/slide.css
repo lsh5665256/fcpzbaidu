@@ -1,0 +1,213 @@
+@charset "utf-8";
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+dd,
+a,
+i,
+b,
+em,
+strong,
+span,
+img {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: "微软雅黑", "黑体", "宋体";
+}
+a {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+}
+li {
+    list-style: none;
+}
+em,
+i {
+    font-style: normal;
+}
+b,
+strong {
+    font-weight: normal;
+}
+img {
+    vertical-align: top;
+}
+a img {
+    border: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+html {
+    font-size: 40px;
+}
+body {
+    font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    -webkit-text-size-adjust: 100%;
+            text-size-adjust: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+            font-smoothing: antialiased;
+    background: #fff;
+    color: #666;
+}
+
+.amap li:before {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 13px;
+    margin-left: -15px;
+    -webkit-animation: shake 1s ease-in-out infinite normal;
+            animation: shake 1s ease-in-out infinite normal;
+}
+/*slide style*/
+.amap {
+    position: relative;
+    overflow: hidden;
+}
+
+.amap ul {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background: gradient(linear, left top, left bottom, from(#eaf4ff), to(#d1e7ff));
+    background: -moz-linear-gradient(top, #eaf4ff, #d1e7ff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaf4ff), to(#d1e7ff));
+    background-size: contain;
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
+.amap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    -webkit-transition: transform .3s ease-in-out;
+            transition: transform .3s ease-in-out;
+    display: none;
+    -webkit-transform: translateZ(0);
+}
+
+
+.for2016spring {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-transform: translate(0, -55%) scale(0.75);
+            transform: translate(0, -55%) scale(0.75);
+
+    visibility: hidden;
+}
+#firstPageForSpring p {
+    display: none;
+}
+#firstPageForSpring .for2016spring {
+    visibility: visible;
+}
+/*end 2016春节活动推广，添加春节元素*/
+
+/*point style*/
+.amap-point {
+    position: absolute;
+    bottom: 20%;
+    right: 15px;
+    text-align: center;
+    font-size: 0;
+}
+
+.amap-point span {
+    margin: .1rem auto;
+    width: .15rem;
+    height: .15rem;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: block;
+    opacity: .4;
+}
+.amap-point span.current {
+    margin: .1rem auto;
+    background: #007AFF;
+    border: none;
+    opacity: .8;
+}
+
+li {
+    background: #FFF;
+}
+
+.content {
+    width: 8rem;
+    height: 100%;
+    margin: 0 auto;	    
+}
+.content a {
+    display: inline-block;
+    padding: 0 .25rem .1rem .65rem;
+    height: .725rem;
+    line-height: .725rem;
+    color: #404040;
+    border: 1px solid #404040;
+    box-sizing: border-box;
+    border-radius: .125rem;
+    font-size: .3rem;
+}
+.content .login {
+    width: 2.625rem;
+    margin-top: .625rem;	
+}
+.content .water {
+    width: 7.3rem;
+    margin-top: .9rem;
+}
+.content .title {
+    width: 3.1rem;
+    margin: .6rem 0 .4rem;
+}
+.content p {
+    text-align: center;
+}
+.content .con_p {
+    width: 5.5rem;
+    font-size: .3rem;
+    /*line-height: 0.4375rem;*/
+    color: #3f3f3f;
+    text-align: left;
+    margin: 0 auto;
+}
+

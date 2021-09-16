@@ -1,0 +1,156 @@
+/* stylelint-disable */
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                /* csshint-disable block-indent vendor-prefixes-sort */
+                -moz-user-focus: none;
+}
+.dachebox {
+    width: 100%;
+    height: 100%;
+    background: url(../img/chezhu/bigbg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.dachebox .logo {
+    width: 2.48rem;
+    height: 0.7067rem;
+    background: url(../img/chezhu/dachelogo.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0.4533rem;
+    top: 0.8933rem;
+}
+.dachebox .title {
+    width: 8.9333rem;
+    height: 2.27rem;
+    position: absolute;
+    top: 2.333rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dachebox .title .da {
+    width: 8.9333rem;
+    height: 2.27rem;
+    background: url(../img/chezhu/dabiaoti.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+ .car {
+    width: 2.4267rem;
+    height: 1.5rem;
+    background: url(../img/chezhu/qiche.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: -24%;
+    right: 3%;
+}
+.dachebox .cardtop {
+    width: 7.9733rem;
+    height: 2.27rem;
+    background: url(../img/chezhu/zhongzi2.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 5.33rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dachebox .card {
+    width: 9.1067rem;
+    height: 5.52rem;
+    background: url(../img/chezhu/hongbaoke.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 7.933rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dachebox .zi1 {
+    width: 7.0333rem;
+    height: .37rem;
+    background: url(../img/chezhu/anzhuobg.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 16rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dachebox .zi2zuo {
+    width: 4.33rem;
+    height: .28rem;
+    background: url(../img/chezhu/zidizuo.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 16.6rem;
+    left: 1.3rem;
+    /* transform: translateX(-50%); */
+}
+.dachebox .zi2yinsi {
+    width: 1.33rem;
+    height: .27rem;
+    background: url(../img/chezhu/yinsi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 16.6rem;
+    left: 6rem;
+}
+.dachebox .zi2quanxian {
+    width: 1.33rem;
+    height: .27rem;
+    background: url(../img/chezhu/quanxian.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 16.6rem;
+    left: 7.5rem;
+}
+.dachebox .download-btn {
+    width: 5.5rem;
+    height: 1.61rem;
+    background: url(../img/chezhu/lijixiazailingqu.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 13.76rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dachebox .download-btn a {
+    display: block;
+    width: 5.2rem;
+    height: 1.1867rem;
+}
+.dachebox .card .left {
+    width: 2.52rem;
+    height: 3.1333rem;
+    background: url(../img/chezhu/leftcard1.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1rem;
+    left: .6rem;
+}
+.dachebox .card .center {
+    width: 2.52rem;
+    height: 3.1333rem;
+    background: url(../img/chezhu/centercard.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.dachebox .card .right {
+    width: 2.52rem;
+    height: 3.1333rem;
+    background: url(../img/chezhu/rightcard.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1rem;
+    left: 6rem;
+}

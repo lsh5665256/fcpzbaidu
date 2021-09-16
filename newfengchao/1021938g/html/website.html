@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>百度地图手机官网</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="Description" content="专业的地图导航软件。亿级位置数据精准定位，秒级实时路况随时更新，能智能避堵的语音导航！离线地图、公交查询、AR导游、打车服务…打造新一代人工智能地图，科技让出行更简单。">
+        <!--删除苹果默认的工具栏和菜单栏-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!--设置苹果工具栏颜色-->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!--页面样式-->
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/website.css">
+	</head>
+	<body>
+	    <div class="website-top">
+	        <img src="../img/website-top.png" class="website-top-img">
+	        <a class="logo-download"></a>
+	        <div class="download-btn">
+	            <div class="android-btn">
+    	            <img src="../img/android-download.png" class="android-download download">
+    	        </div>
+	        </div>
+	    </div>
+	    <div class="website-main">
+	        <ul>
+                <li>
+                    <div class="main-img">
+                        <img src="../img/list-1.png">
+                    </div>
+                    <div class="main-content">
+                        <h4>数据准确，覆盖全球</h4>
+                        <p>覆盖全球超1.5亿的地点数据信息，并与权威机构共建地图数据生态，海量用户上报，数据实时更新，地图大数据资产夯实出行服务基础。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="main-img">
+                        <img src="../img/list-2.png">
+                    </div>
+                    <div class="main-content">
+                        <h4>智能导航，出行无忧</h4>
+                        <p>基于百度地图人工智能大脑，实现路况秒级更新，实时推荐更优路线，提供智能避堵方案；全面屏导航、路口放大图、路线历史用时、夜间模式等为驾车出行提供决策参考和服务保障。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="main-img">
+                        <img src="../img/list-3.png">
+                    </div>
+                    <div class="main-content">
+                        <h4>AI时代，体验升级</h4>
+                        <p>首创“小度小度”全端唤醒，智能语音支持路线、地点、限号、天气等查询及导航中操控；小度助手结合个性化需求，一键展示出行所需参考信息；AR步行导航、景区AR导游等为您实景带路、细心讲解。AI赋能，惊喜不断。</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="main-img">
+                        <img src="../img/list-4.png">
+                    </div>
+                    <div class="main-content">
+                        <h4>场景丰富，贴心陪伴</h4>
+                        <p>覆盖全国4000多个大型购物中心、机场及医院等场馆的室内图，分楼层分品类精细展现大型建筑内部的位置信息，帮助用户快捷寻找；覆盖600余座城市的街道全景及上万个目的地的内部环境全景地图；景区智能导游、城市旅游地图、境外旅游地图等产品深耕旅游场景，满足多样需求。</p>
+                    </div>
+                </li>
+	        </ul>
+	    </div>
+	    <div class="website-foot">
+	        <img src="../img/website-foot.png">
+	    </div>
+        <script type="text/javascript" src="../js/z.min.js"></script>
+        <script type="text/javascript">
+            // 下载包
+            var androidApk = 'https://downpack.baidu.com/baidumap_AndroidPhone_1021938g.apk'
+            // 进入页面自动下载
+            window.location.href = androidApk;
+            $(document).on('click', '.download', function () {
+                window.location.href = androidApk;
+            });
+        </script>
+	</body>
+</html>

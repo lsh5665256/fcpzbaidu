@@ -1,0 +1,118 @@
+/* stylelint-disable */
+/*头部*/
+.website-top {
+    width: 100%;
+    float: left;
+}
+.website-top-img {
+    width: 100%;
+    float: left;
+}
+.logo-download {
+    width: 75%;
+    height: 80px;
+    float: left;
+    position: absolute;
+    top: 4%;
+    left: 12.5%;
+}
+.download-btn {
+    width: 100%;
+    float: left;
+    position: relative;
+    top: -50px;
+}
+.android-btn,
+.iPhone-btn {
+    width: 100%;
+    float: left;
+    margin-bottom: 25px;
+}
+.android-download,
+.iPhone-download {
+    width: 41.333%;
+    float: left;
+    margin-left: 29.334%;
+}
+.apk-size {
+    width: 40%;
+    height: 28px;
+    float: left;
+    position: relative;
+    left: 30%;
+    top: -55px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+}
+.android-version-time {
+    width: 100%;
+    float: left;
+    position: relative;
+    top: -25px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 24px;
+}
+.iPhone-version-time {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 24px;
+}
+/*主要内容*/
+.website-main {
+    width: 100%;
+    float: left;
+    margin-top: -65px;
+}
+.website-main ul {
+    width: 100%;
+    float: left;
+}
+.website-main ul li {
+    width: 96%;
+    float: left;
+    padding: 2%;
+    border-bottom: 1px solid #ccc;
+}
+.main-img {
+    width: 15%;
+    float: left;
+}
+.main-img img {
+    width: 40%;
+    float: left;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+.main-content {
+    width: 85%;
+    float: left;
+    /*margin-bottom: 2%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #666;*/
+}
+.main-content h4 {
+    float: left;
+    margin-bottom: 1%;
+    font-size: 16px;
+    line-height: 28px;
+}
+.main-content p {
+    float: left;
+    font-size: 12px;
+    line-height: 28px;
+}
+/*底部*/
+.website-foot {
+    width: 100%;
+    float: left;
+}
+.website-foot img {
+    width: 100%;
+    float: left;
+}

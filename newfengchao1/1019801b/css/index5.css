@@ -1,0 +1,514 @@
+/* stylelint-disable */
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                /* csshint-disable block-indent vendor-prefixes-sort */
+                -moz-user-focus: none;
+}
+/* 从这里开始这是index落地页的样式 */
+.main {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.main .map-logo {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo1 {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+    float: left;
+    margin-left: .933rem;
+}
+/* 新的logo */
+.main .map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+/*content*/
+.main .swiper-container1 {
+    width: 10rem;
+    height: 9.333rem;
+}
+.main .swiper-container1 img {
+    width: 9.334rem;
+    height: 9.333rem;
+    float: left;
+    margin-left: .333rem;
+}
+.main .swiper-pagination {
+    float: left;
+    margin-top: 3.5rem;
+}
+/*download*/
+.main .map-download {
+    width: 10rem;
+    float: left;
+}
+.main .download-btn {
+    width: 7.813rem;
+    height: .933rem;
+    margin: 0 auto;
+    margin-top: .633rem;
+    color: #fff;
+    font-size: .507rem;
+    border: 1px solid #3385ff;
+    background-color: #3385ff;
+    border-radius: .467rem;
+    outline: none;
+    text-align: center;
+}
+.main .download-btn a {
+    display: block;
+    width: 7.813rem;
+    height: .933rem;
+    line-height: .933rem;
+    color: #fff;
+    text-align: center;
+}
+.main .download-text {
+    width: 10rem;
+    float: left;
+    text-align: center;
+}
+.main .download-span {
+    font-size: .427rem;
+    color: #3385ff;
+    text-decoration: underline;
+}
+/* 隐私样式开始 */
+.yinsitop {
+    /* position: absolute;
+    bottom: 8%; */
+    width: 100%;
+}
+.yinsitop .bao {
+    display: flex;
+    width: 76%;
+    margin: 0 auto;
+}
+
+.yinsitop .banben {
+    width: 3.6133rem;
+    height: .4rem;
+    background: url(../img/yinsi/anzhuobanben1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.yinsitop .update {
+    width: 3.3333rem;
+    height: .3rem;
+    background: url(../img/yinsi/anzhuoshijian.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: .05rem;
+    margin-left: .2rem;
+}
+.yinsibottom {
+    /* position: absolute;
+    bottom: 5%; */
+    width: 100%;
+}
+.yinsibottom .bao {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.yinsibottom .bao .kaifazhe {
+    width: 4.6933rem;
+    height: .32rem;
+    background: url(../img/yinsi/kaifazhe.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.yinsibottom .bao .yinsi {
+    width: 1.1733rem;
+    height: 0.32rem;
+    background: url(../img/yinsi/yinsizengce.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-left: .4rem;
+}
+.yinsibottom .bao .quanxian {
+    width: 1.1733rem;
+    height: 0.32rem;
+    background: url(../img/yinsi/quanxian.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-left: .2rem;
+}
+.yinsizong {
+    margin-top: 4rem;
+}
+/* 当视口的高小于700的时候执行 */
+/* @media screen and (max-height: 680px) {
+    body{
+        height: 110%;
+    }
+    .yinsitop {
+        top: 15.467rem;
+    }
+    .yinsibottom {
+        top:15.9767rem;
+    }
+}
+@media screen and (max-height: 600px) {
+    body{
+        height: 130%;
+    }
+    .yinsitop {
+        top: 15.8467rem;
+    }
+    .yinsibottom {
+        top:16.367rem;
+    }
+} */
+/* 新通用落地页样式开始 */
+.newIndexbox {
+    width: 100%;
+    /* height: 100%; */
+    background: url(../img/tongyong/tbg.png) no-repeat center center;
+    background-size: 100% 100%;
+    /* overflow: hidden; */
+    display: none;
+    min-height: 100vh;
+}
+.newIndexbox .logo {
+    width: 2.6667rem;
+    height: 0.6667rem;
+    background: url(../img/tongyong/logo.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-left: 0.36rem;
+    margin-top: 0.28rem;
+}
+.newIndexbox .topzi {
+    width: 5.1067rem;
+    height: 1.67rem;
+    background: url(../img/tongyong/zitop.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: .4rem;
+}
+.newIndexbox .tongyong-banner {
+    margin-top: 1rem;
+    height: 9.6rem;
+}
+/* 隐私样式开始 */
+.newIndexbox .yinsi1 {
+    margin-top: 1.3rem;
+    height: 1.1667rem;
+}
+.newIndexbox .yinsi1 .yinsitop1 {
+    width: 100%;
+}
+.newIndexbox .yinsi1 .yinsitop1 .bao {
+    display: flex;
+    width: 69%;
+    height: .4rem;
+    margin: 0 auto;
+    background: url(../img/tongyong/anzhuozibg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+/* .newIndexbox .yinsi1 .yinsitop1 .banben {
+    width: 3.6133rem;
+    height: .4rem;
+    background: url(../img/yinsi/anzhuobanben.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .yinsi1 .yinsitop1 .update {
+    width: 3.3333rem;
+    height: .3rem;
+    background: url(../img/yinsi/gengxinshijian.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: .05rem;
+    margin-left: .2rem;
+} */
+.newIndexbox .yinsi1 .yinsibottom1 {
+    width: 100%;
+}
+.newIndexbox .yinsi1 .yinsibottom1 .bao {
+    display: flex;
+    width: 74%;
+    margin: 0 auto;
+}
+.newIndexbox .yinsi1 .yinsibottom1 .bao .kaifazhe {
+    width: 4.6933rem;
+    height: .28rem;
+    background: url(../img/tongyong/kaifazhe.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .yinsi1 .yinsibottom1 .bao .yinsi {
+    width: 1.1733rem;
+    height: 0.28rem;
+    background: url(../img/tongyong/yinsibenshen.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-left: .4rem;
+}
+.newIndexbox .yinsi1 .yinsibottom1 .bao .quanxian {
+    width: 1.1733rem;
+    height: 0.28rem;
+    background: url(../img/tongyong/quanxianbenshen.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-left: .2rem;
+}
+.newIndexbox .topsmzi {
+    width: 4.367rem;
+    height: 0.55rem;
+    background: url(../img/tongyong/daohangzi.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    margin-top: .4rem;
+}
+.newIndexbox .dhshu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/daohang.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .diyi .card {
+    width: 6.5876rem;
+    height: 3.92rem;
+    position: absolute;
+    background: url(../img/tongyong/daohangcard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:60%;
+}
+.newIndexbox .dcshu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/dacheshu.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .dier .card {
+    width: 6.5876rem;
+    height: 4.1rem;
+    position: absolute;
+    background: url(../img/tongyong/dachecard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:62%;
+}
+.newIndexbox .fjshu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/fujin.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .disan .card {
+    width: 6.5876rem;
+    height: 3.92rem;
+    position: absolute;
+    background: url(../img/tongyong/fujincard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:59%;
+}
+.newIndexbox .busshu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/busshu.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .disi .card {
+    width: 6.5876rem;
+    height: 3.92rem;
+    position: absolute;
+    background: url(../img/tongyong/buscard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:53%;
+}
+.newIndexbox .jiejingshu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/jiejingshu.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .diwu .card {
+    width: 6.5876rem;
+    height: 3.52rem;
+    position: absolute;
+    background: url(../img/tongyong/jiejingcard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:70%;
+}
+.newIndexbox .jiayoushu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/jiayoushu.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .diliu .card {
+    width: 6.5876rem;
+    height: 3.5rem;
+    position: absolute;
+    background: url(../img/tongyong/jiayoucard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:74%;
+}
+.newIndexbox .yuyinshu {
+    /* width: 5.533rem;
+    height: 9.6rem; */
+    margin: 0 auto;
+    background: url(../img/tongyong/yuyinshu.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.newIndexbox .diqi .card {
+    width: 6.5876rem;
+    height: 3.52rem;
+    position: absolute;
+    background: url(../img/tongyong/yuyincard.png) no-repeat center center;
+    background-size: 100% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top:24%;
+}
+
+.tongyong-banner .swiper-wrapper .shuzhe {
+    width: 5.933rem;
+    height: 10.6rem;
+    /* box-shadow:0 0 9px 3px #999; */
+}
+
+/* 这个是中间轮播图的样式 */
+.tongyong-banner .swiper-wrapper .swiper-slide {
+    width: 6.4rem;
+    height: 9.2rem;
+    z-index: 13;
+}
+/* 这个是左侧轮播图的样式 */
+.tongyong-banner .swiper-wrapper .swiper-slide-prev {
+    margin-top: .34rem;
+    height: 7rem! important;
+    /* margin-left: -3rem; */
+    /* background: yellow !important; */
+}
+.tongyong-banner .swiper-wrapper .swiper-slide-prev .card{
+    display: none;
+   
+}
+.tongyong-banner .swiper-wrapper .swiper-slide-prev .shuzhe{
+    height: 8.5rem;
+    margin-top: -.1rem;
+    margin-left: 2.5rem;
+    border-radius: 10px;
+    opacity: .4;
+}
+/* 这个是右侧轮播图的样式 */
+.tongyong-banner .swiper-wrapper .swiper-slide-next { 
+    margin-top: .34rem;
+    height: 7rem !important;
+    z-index: 11;
+    /* background: pink; */
+}
+.tongyong-banner .swiper-wrapper .swiper-slide-next .card {
+    display: none;
+   
+}
+.tongyong-banner .swiper-wrapper .swiper-slide-next .shuzhe {
+    height: 8.5rem;
+    margin-top: -.1rem;  
+    /* border-radius: 10px; */
+    margin-left: -2rem;
+    opacity: .4;
+}
+.newIndexbox .banner {
+    width: 100%;
+    height: 12rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+    margin-top: -1rem;
+}
+.newIndexbox .download-btn {
+    width: 5.813rem;
+    height: .933rem;
+    margin: 0 auto;
+    margin-top: .33rem;
+    color: #fff;
+    font-size: .507rem;
+    border: 1px solid #2c93fb;
+    background-color: #2c93fb;
+    border-radius: .467rem;
+    outline: none;
+    text-align: center;
+    animation: pump_v2 2s ease-in-out infinite;
+}
+.newIndexbox .download-btn a {
+    display: block;
+    width: 5.813rem;
+    height: .933rem;
+    line-height: .933rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* @media screen and (max-height: 600px) {
+    .newIndexbox .topzi {
+        margin-top: .1rem;
+    }
+    .newIndexbox .download-btn {
+        margin-top: .1rem;
+    }
+} */
+.swiper-container-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(to left,rgba(0,0,0,0),rgba(0,0,0,0));
+}
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: linear-gradient(to left,rgba(0,0,0,0),rgba(0,0,0,0));
+}
+/* 小点距离上边的距离 */
+.newIndexbox .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+}
+
+
+@keyframes pump_v2 {
+    0%, 40%, 80%, 100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    20%, 60% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+}
+
+/* 新通用落地页样式结束 */

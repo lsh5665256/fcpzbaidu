@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <title>百度地图</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="Description" content="免费下载Android版    免费下载iPhone版" />
+        <!--删除苹果默认的工具栏和菜单栏-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!--设置苹果工具栏颜色-->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../css/index.css" />
+	</head>
+	<body>
+        <div class="main-img">
+            <a href="slide.html"><img src="../img/brands-bg.jpg" /></a>
+        </div>
+        <div class="main-show">
+            <ul>
+                <a href="smart.html"><li style="margin-left: -5.5%;">
+                    <h4>智能出行</h4>
+                    <p>高准确率</p>
+                </li></a>
+                <div class="thread"></div>
+                <a href="voice.html"><li>
+                    <h4>语音导航</h4>
+                    <p>小度小度</p>
+                </li></a>
+                <div class="thread"></div>
+                <a href="ar.html"><li>
+                    <h4>AR导航</h4>
+                    <p>AR实景</p>
+                </li></a>
+                <a href="around.html"><li style="margin-left: -5.5%;">
+                    <h4>发现周边</h4>
+                    <p>美食娱乐</p>
+                </li></a>
+                <div class="thread"></div>
+                <a href="owner.html"><li>
+                    <h4>车主服务</h4>
+                    <p>充电停车</p>
+                </li></a>
+                <div class="thread"></div>
+                <a href="international.html"><li>
+                    <h4>国际地图</h4>
+                    <p>旅游必备</p>
+                </li></a>
+            </ul>
+        </div>
+        <div class="download-button">
+            <a href="slide.html" title="按钮">官方下载</a>
+            <!--<span class="ec-pure_button-text ec-pure_white_download_button-text">官方下载</span>-->
+        </div>
+	</body>
+	<script>
+	var u = navigator.userAgent, app = navigator.appVersion;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+    var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isAndroid) {
+        $(".content a").attr('href','https://downpack.baidu.com/baidumap_AndroidPhone_1012337a.apk'); 
+    }else if (isIOS) {
+        $('.download-button a').attr('href','itms-apps://itunes.apple.com/cn/app/bai-du-di-tu/id452186370?mt=8');
+    }
+	</script>
+</html>

@@ -1,0 +1,263 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                /* csshint-disable block-indent vendor-prefixes-sort */
+                -moz-user-focus: none;
+}
+/* box是来回切换页面的div的一些公共样式 */
+.box {
+    width: 100%;
+    height: 100%;
+}
+/* 从这里开始这是index落地页的样式 */
+.main {
+    /* display: none; */
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+.maLeft {
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/pinzhuananzhuo.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 50%;
+    left: -4rem;
+    transform: translateY(-50%);
+    
+}
+.maLeft div {
+    position: absolute;
+    bottom: -30%;
+}
+.maRight {
+    width: 3rem;
+    height: 3rem;
+    background: url(../img/pinzhuanxinma.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -4rem;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+.maRight div {
+    position: absolute;
+    bottom: -30%;
+}
+.bao {
+    width: 10rem;
+    height: auto;
+    min-height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding-top: 20px;
+    
+}
+.main .map-logo {
+    margin: 0 auto;
+    width: 10rem;
+    height: 1.333rem;
+    /* margin-top: .533rem; */
+    margin-bottom: .567rem;
+    text-align: center;
+}
+.main .map-logo1 {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+}
+/* 新的logo */
+.main .map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+/*content*/
+.main .swiper-container {
+    width: 10rem;
+    height: 9.333rem;
+}
+.main .swiper-container img {
+    width: 9.334rem;
+    height: 9.333rem;
+    float: left;
+    margin-left: .333rem;
+}
+.main .swiper-pagination {
+    float: left;
+    margin-top: 3.6rem;
+}
+/*download*/
+.main .map-download {
+    width: 10rem;
+    margin: 0 auto;
+}
+.main .download-btn {
+    width: 7.813rem;
+    height: .933rem;
+    margin: 0 auto;
+    margin-top: .633rem;
+    color: #fff;
+    font-size: .507rem;
+    border: 1px solid #3385ff;
+    background-color: #3385ff;
+    border-radius: .467rem;
+    outline: none;
+    text-align: center;
+}
+.main .download-btn a {
+    display: block;
+    width: 7.813rem;
+    height: .933rem;
+    line-height: .933rem;
+    color: #fff;
+    text-align: center;
+}
+.main .download-text {
+    width: 10rem;
+    float: left;
+    text-align: center;
+}
+.main .download-span {
+    font-size: .427rem;
+    color: #3385ff;
+    text-decoration: underline;
+}
+/* index落地页样式结束*/
+/* 从这开始是红包的样式 */
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .65);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+.mask .redpackage {
+    width: 7.4133rem;
+    height: 11.32rem;
+    background: #f94a4f;
+    border-radius: .37rem;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/hongbaobg1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.mask .redpackage .logo {
+    width: 2.9067rem;
+    height: .8rem;
+    background: url(../img/redlogo.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mask .redpackage .xiaodu {
+    width: 2.36rem;
+    height: 2.36rem;
+    background: url(../img/du.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.78rem;
+}
+.mask .redpackage .ptop ,
+.mask .redpackage .pbottom {
+    font-size: .6667rem;
+    text-align: center;
+    color: #fbf0b3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mask .redpackage .ptop {
+    top: 4.78rem;
+}
+.mask .redpackage .pbottom {
+    width: 100%;
+    top: 5.78rem;
+}
+.mask .redpackage .open {
+    width: 2.4rem;
+    height: 2.4133rem;
+    background: url(../img/jinbibi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7.5rem;
+}
+.mask .redpackage .leftjinbi {
+    width: 1.2267rem;
+    height: 1.48rem;
+    background: url(../img/moneyleft.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -.6rem;
+    top: 4.3rem;
+
+}
+.mask .redpackage .topjinbi {
+    width: .9867rem;
+    height: .8rem;
+    background: url(../img/moneytop.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1rem;
+    top: -.4rem;
+}
+.mask .redpackage .rightjinbi {
+    width: 1.4133rem;
+    height: 1.2533rem;
+    background: url(../img/moneyright.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -.7rem;
+    top: 2.4rem;
+}
+.mask .redpackage .close {
+    width: 1.0133rem;
+    height: 1.0133rem;
+    background: url(../img/guanbi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14%;
+}
+/* 红包弹窗页面样式结束 */

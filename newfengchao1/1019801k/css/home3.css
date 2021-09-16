@@ -1,0 +1,334 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                /* csshint-disable block-indent vendor-prefixes-sort */
+                -moz-user-focus: none;
+}
+/* 这里是一些公共样式 */
+.weixingbox,
+.beidoubox,
+.busbox,
+.subwaybox {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/* 从这里开始这是index落地页的样式 */
+.main {
+    /* display: none; */
+    visibility: hidden;
+}
+.main .map-logo {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo1 {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+    float: left;
+    margin-left: .933rem;
+}
+/* 新的logo */
+.main .map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+/*content*/
+.main .swiper-container {
+    width: 10rem;
+    height: 9.333rem;
+}
+.main .swiper-container img {
+    width: 9.334rem;
+    height: 9.333rem;
+    float: left;
+    margin-left: .333rem;
+}
+.main .swiper-pagination {
+    float: left;
+    margin-top: 3.5rem;
+}
+/*download*/
+.main .map-download {
+    width: 10rem;
+    float: left;
+}
+.main .download-btn {
+    width: 7.813rem;
+    height: .933rem;
+    margin: 0 auto;
+    margin-top: .633rem;
+    color: #fff;
+    font-size: .507rem;
+    border: 1px solid #3385ff;
+    background-color: #3385ff;
+    border-radius: .467rem;
+    outline: none;
+    text-align: center;
+}
+.main .download-btn a {
+    display: block;
+    width: 7.813rem;
+    height: .933rem;
+    line-height: .933rem;
+    color: #fff;
+    text-align: center;
+}
+.main .download-text {
+    width: 10rem;
+    float: left;
+    text-align: center;
+}
+.main .download-span {
+    font-size: .427rem;
+    color: #3385ff;
+    text-decoration: underline;
+}
+/* index落地页样式结束*/
+/* 卫星落地页样式开始 */
+/* wrap是卫星落地页的div */
+.weixingbox,
+.beidoubox {
+    background: url(../img/bigbg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.main1 .map-logo {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main1 .top {
+    width: 100%;
+    height: 5.04rem;
+    position: relative;
+    background: rgba(0, 0, 0, .4);
+}
+.main1 .top .icon-baidu {
+    width: .9867rem;
+    height: 1.0133rem;
+    background: url(../img/ditu.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 3.4933rem;
+    top: .7733rem;
+}
+.main1 .logocenter {
+    width: 2.77rem;
+    height: 1.0133rem;
+    background: url(../img/smallcenter.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: .7733rem;
+    transform: translateX(-50%);
+}
+.main1 .top .p-top {
+    color: #fff;
+    font-size: 1.2667rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2.0133rem;
+}
+.main1 .top .p-bottom {
+    color: #fff;
+    font-size: .9333rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 3.4533rem;
+}
+.main1 .map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+    float: left;
+    margin-left: .933rem;
+}
+.main1 .map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+.main1 .map-download {
+    width: 10rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 17%;
+}
+.main1 .download-btn {
+    width: 6.48rem;
+    height: 1.3933rem;
+    float: left;
+    /* margin-top: 3.5rem; */
+    color: #fff;
+    font-size: .507rem;
+    background-color: #3385ff;
+    border-radius: .467rem;
+    outline: none;
+    background: url(../img/xiabu.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.main1 .download-btn a {
+    width: 6.48rem;
+    height: 1.3933rem;
+    border-radius: 16%;
+    display: block;
+}
+/* 卫星落地页的样式结束 */
+/* 公交导航落地页样式开始 */
+.busbox {
+    background: url(../img/busbg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.busbox .download-btn {
+    width: 8.36rem;
+    height: 1.16rem;
+    background: #3285ff;
+    border-radius: .4rem;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.busbox .download-btn a {
+    display: block;
+    width: 8.36rem;
+    height: 1.16rem;
+    line-height: 1.16rem;
+    border-radius: .4rem;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+/* 公交导航落地页样式结束 */
+/* 地铁导航落地页样式开始 */
+.subwaybox {
+    background: url(../img/subwaybg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.subwaybox .topbg {
+    width: 100%;
+    height: 5.04rem;
+    position: relative;
+    background-color: #fff;
+    background: rgba(255, 255, 255, .9);
+}
+.small-logo {
+    width: 2.3067rem;
+    height: .5733rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .4267rem;
+    background: url(../img/smalllogo1.png) no-repeat center center;
+    background-size: 100%;
+}
+.subwaybox .topbg-top {
+    position: absolute;
+    left: .5467rem;
+    top: 1.6rem;
+    color: #000;
+    font-weight: 700;
+}
+.subwaybox .topbg-bottom {
+    position: absolute;
+    left: 3.2533rem;
+    top: 3.2533rem;
+    font-size: .7733rem;
+    font-weight: 700;
+
+}
+.subwaybox .topbg-top span {
+    color: #4d9ebc;
+}
+.subwaybox .download-btn {
+    width: 8.36rem;
+    height: 1.16rem;
+    background: #3285ff;
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.subwaybox .download-btn a {
+    display: block;
+    width: 8.36rem;
+    height: 1.16rem;
+    line-height: 1.16rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+/* 地铁导航落地页样式结束 */
+/* 北斗导航落地页样式开始 */
+.beidoubox .download-btn {
+    width: 6.48rem;
+    height: 1.3933rem;
+    background: #3984ff;
+    border-radius: .6667rem;
+    position: absolute;
+    bottom: 17%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.0267rem;
+    background: url(../img/xiabu1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.beidoubox .download-btn a {
+    display: block;
+    width: 6.48rem;
+    height: 1.3933rem;
+    border-radius: .6667rem;
+    color: #fff;
+    font-size: .6rem;
+    text-align: center;
+    line-height: 1.3933rem;
+}
+.beidoubox .top .p-top {
+    color: #fc0;
+    font-size: 1.2667rem;
+}
+.beidoubox .top .p-bottom {
+    color: #fff;
+}

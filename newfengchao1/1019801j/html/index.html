@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+    <head>
+        <meta charset="utf-8">
+        <title>百度地图-官方版-免费下载</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="keywords" content="百度地图,地图,手机地图,导航,手机导航,手机地图下载,公交查询,实时路况,公交,路况查询,全景,实景地图,打车,叫车,一键叫车" />
+        <meta name="Description" content="专业的地图导航软件。亿级位置数据精准定位，秒级实时路况随时更新，能智能避堵的语音导航！离线地图、公交查询、AR导游、打车服务…打造新一代人工智能地图，科技让出行更简单。">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" type="text/css" href="../css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+        <script type="text/javascript">
+            (function(doc, win) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function() {
+                        var clientWidth = docEl.clientWidth;
+                        if(!clientWidth) return;
+                        docEl.style.fontSize = 75 * (clientWidth / 750) + 'px';
+                    };
+                if(!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                recalc();
+            })(document, window);
+        </script>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?2ee97add1558bb34d8430cb274ee7c71";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+        <script type="text/javascript">
+            window._agl = [];
+            (function() {
+                _agl.push(
+                    ['production', '_f7L2XwGXjyszb4d1e2oxPybgD'], ['ext', {
+                        userid: 1381057,
+                        url: 'http://map.baidu.com/zt/qudao/newfengchao1/1019801j/html/index.html',
+                        exp: 'fcocpc'
+                    }]
+                );
+                (function() {
+                    var agl = document.createElement('script');
+                    agl.type = 'text/javascript';
+                    agl.async = true;
+                    agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD&userid=1381057&exp=fcocpc';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(agl, s);
+                })();
+            })();
+        </script>
+
+        <script>
+            // 埋点相关
+            (function isAndroid_ios(){
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    // console.log(u,'~~~~~~~~~~~~~~~~~~~~~', app)
+                    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+                    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+                    if(isAndroid) {
+                        (function () { 
+                            var script = document.createElement('script');
+                            script.src = 'http://integralwall.baidu.com/integralwall/interact/landingrecoder?partner=fengchao&event_type=show&os=2';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(script, s);
+                        })()
+                    } else if(isiOS) {
+                        (function () { 
+                            var script = document.createElement('script');
+                            script.src = 'http://integralwall.baidu.com/integralwall/interact/landingrecoder?partner=fengchao&event_type=show&os=1';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(script, s);
+                        })()
+                    }
+                    
+                })()
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <!--title-->
+            <div class="map-logo">
+                <img src="../img/logo.png" />
+            </div>
+            <!--content-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide download">
+                        <img src="../img/1.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/2.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/3.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/4.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/5.png">
+                    </div>
+                </div>
+                <!--pagination-->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--button-->
+            <div class="map-download">
+                <button id="down-apk" class="download-btn download" data-agl-cvt="6">立即下载</button>
+            </div>
+        </div>
+        <div style="display: none;">
+            <script type="text/javascript" src="https://code.bdstatic.com/npm/jquery@3.2.0/dist/jquery.min.js"></script>
+            <script type="text/javascript" src="https://code.bdstatic.com/npm/swiper@4.4.2/dist/js/swiper.js"></script>
+            <script type="text/javascript">
+                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F7415c251523287e477161b6b2554e732' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script>
+                var currentIndex = -1;
+                var swiper = new Swiper(".swiper-container", {
+                    direction: 'vertical',
+                    pagination: {
+                        el: ".swiper-pagination"
+                    },
+                    paginationClickable: true,
+                    autoplay: {
+                        delay: 5000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: false,
+                    },
+                    loop: true,
+                    autoplayDisableOnInteraction: false,
+                    spaceBetween: 80,
+                    hashnav: false,
+                    hashnavWatchState: true,
+                    on: {
+                        slideChange: function () {
+                            currentIndex = this.activeIndex;
+                        }
+                    }
+                });
+            </script>
+            <script>
+                var androidApk = 'https://downpack.baidu.com/baidumap_AndroidPhone_1019801j.apk';
+                var iosIpa = 'itms-apps://itunes.apple.com/cn/app/bai-du-di-tu/id452186370?mt=8';
+
+                var adrUrl = "http://integralwall.baidu.com/integralwall/interact/landingrecoder?partner=fengchao&event_type=click&os=2";
+                var iosUrl = "http://integralwall.baidu.com/integralwall/interact/landingrecoder?partner=fengchao&event_type=click&os=1";
+
+                var u = navigator.userAgent, app = navigator.appVersion;
+                // console.log(u,'~~~~~~~~~~~~~~~~~~~~~', app)
+                var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //android终端或者uc浏览器
+                var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+
+                $('.goto-website').click(function () {
+                    $('.goto-website').attr('href', 'website.html');
+                    _hmt.push(['_trackEvent', 'app', 'download', 'download:map_download_website']);
+                });
+                
+                $('#down-apk, #down-apk-mini').click(function (e) {
+                    // var url = window.location.href;
+                    if(currentIndex == -1) {
+                        _hmt.push(['_trackEvent', 'app', 'download', 'accurate-easy']);
+                    } else if(currentIndex === 1 || currentIndex === 6) {
+                        _hmt.push(['_trackEvent', 'app', 'download', 'accurate-easy']);
+                    } else if(currentIndex === 2) {
+                        _hmt.push(['_trackEvent', 'app', 'download', 'voice-navigation']);
+                    } else if(currentIndex === 3) {
+                        _hmt.push(['_trackEvent', 'app', 'download', 'route-plan']);
+                    } else if(currentIndex === 4) {
+                        _hmt.push(['_trackEvent', 'app', 'download', 'data-all']);
+                    } else if(currentIndex === 5) {
+                        _hmt.push(['_trackEvent', 'app', 'download', 'offline-navigation']);
+                    }
+                    
+                    _hmt.push(['_trackEvent', 'app', 'download', 'download:map_download_index']);
+
+                    if (isAndroid) {
+                        $.ajax({
+                            type: "GET",
+                            url: adrUrl,
+                            dataType:"jsonp",
+                            jsonpCallback:'callback'
+                        });
+                        window.location.href = androidApk;
+
+                    } else if (isiOS) {
+                        $.ajax({
+                            type: "GET",
+                            url: iosUrl,
+                            dataType: 'jsonp',
+                            jsonpCallback: 'callback'
+                        });
+                        window.location.href = 'itms-apps://itunes.apple.com/cn/app/bai-du-di-tu/id452186370?mt=8';
+                    }
+                });
+            </script>
+        </div>
+    </body>
+</html>

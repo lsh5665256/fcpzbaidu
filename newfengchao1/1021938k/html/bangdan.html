@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+    <meta charset="utf-8">
+    <title>百度地图-官方版-免费下载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="百度地图,地图,手机地图,导航,手机导航,手机地图下载,公交查询,实时路况,公交,路况查询,全景,实景地图,打车,叫车,一键叫车">
+    <meta name="Description"
+        content="专业的地图导航软件。亿级位置数据精准定位，秒级实时路况随时更新，能智能避堵的语音导航！离线地图、公交查询、AR导游、打车服务…打造新一代人工智能地图，科技让出行更简单。">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bangdan2.css">
+    <style>
+        [v-cloak] {
+		display: none
+	}
+    </style>
+    <script type="text/javascript">
+        !(function (t, e) {
+            var n = t.documentElement;
+            var o = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            var i = function () {
+                var t = n.clientWidth;
+                var e = 750;
+                if (t) {
+                    n.style.fontSize = 75 * (t / e) + 'px';
+                };
+                // t && (t >= e ? n.style.fontSize = '100px' : n.style.fontSize = 75 * (t / e) + 'px');
+            };
+            i(),
+                t.addEventListener && (e.addEventListener(o, i, !1), t.addEventListener('DOMContentLoaded', i, !1));
+        })(document, window);
+    </script>
+    <script>
+       var _hmt = _hmt || [];
+        (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4ca21b46ef3e8b47ef3c5caa7f0441d9";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <script type="text/javascript">
+        window._agl = [];
+        (function () {
+            // eslint-disable-next-line
+            _agl.push(
+                ['production', '_f7L2XwGXjyszb4d1e2oxPybgD'], ['ext', {
+                    userid: 1381057,
+                    url: 'http://map.baidu.com/zt/qudao/newfengchao1/1019801k/html/index.html',
+                    exp: 'fcocpc'
+                }]
+            );
+            (function () {
+                var agl = document.createElement('script');
+                agl.type = 'text/javascript';
+                agl.async = true;
+                agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD&userid=1381057&exp=fcocpc';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(agl, s);
+            })();
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- main是放轮播图的div，即是落地页 -->
+    <!-- <div class="fuchuang down-apk"></div> -->
+    <div class="wrapbox">
+        <div class="main hezi" data-clipboard-text="">
+            <!--title-->
+            <div class="map-logo">
+                <img src="../img/newlogo1.png">
+            </div>
+            <!--content-->
+            <div class="swiper-container swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide download">
+                        <img src="../img/1.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/6.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/2.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/7.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/4.png">
+                    </div>
+                    <div class="swiper-slide download">
+                        <img src="../img/5.png">
+                    </div>
+                </div>
+                <!--pagination-->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!--button-->
+            <div class="map-download content">
+                <div id="down-apk" class="download-btn download down-apk" data-agl-cvt="6">
+                    <a href="javascript:;" class="a1 b1" data-clipboard-text="">立即下载</a>
+                </div>
+            </div>
+            <div class="yinsitop">
+                <div class="bao">
+                    <div class="banben"></div>
+                    <div class="update"></div>
+                </div>
+
+            </div>
+            <div class="yinsibottom">
+                <div class="bao">
+                    <div class="kaifazhe"></div>
+                    <div class="yinsi"></div>
+                    <div class="quanxian"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 榜单div开始 -->
+    <div id="app-4" v-cloak style="background: #fff;">
+        <!-- 上边头的div -->
+        <div v-if="bangdanData"
+            v-bind:style="{ 'background-image': 'url(' + hederimg + ')','background-repeat':'no-repeat','background-size':'cover' }"
+            class="topbg">
+            <div class="logo"></div>
+            <div class="resoubang down-apk1" data-clipboard-text="" @click="iframeCallup2('baidumap://map/show?src=FCH5shantou','noDown')"></div>
+            <div class="area down-apk1" data-clipboard-text="" @click="iframeCallup2('baidumap://map/show?src=FCH5shantou','noDown')">{{area}}</div>
+            <!-- <div class="down-apk1 btn" data-clipboard-text=""  @click="iframeCallup2('baidumap://map/show?src=FCH5shantou')">立即下载</div> -->
+        </div>
+        
+        <div v-if="bangdanData" class="bigwrap">
+            <div v-for="(item,index) in xuanran" class="bigbox hezi down-apk"
+                @click="iframeCallup(`baidumap://map/place/detail?src=FCH5shantou&uid=${item.uid}`,item.uid)" data-clipboard-text="">
+                <div class="topwenzi">
+                    <div class="number">{{ index + 1 >= 10 ? index + 1 : '0' + (index + 1)}}</div>
+                    <!-- <div class="number">{{ index + 1 > 10 ? index + 1 : '0' + ((（(  () ）（）（）index + 1) }}</div> -->
+                    <div class="city">
+                        <p class="ptop">{{item.poi_name}}</p>
+                        <p class="pbottom">{{item.city_name}}-{{item.area_name}}</p>
+                    </div>
+                </div>
+                <!-- <div class="leftimg a1" v-bind:style="{ 'background-image': 'url(' + item.img + ')','background-repeat':'no-repeat','background-size':'cover' }" data-clipboard-text="">
+                    </div> -->
+                <div class="imgwrap" v-if="item.imgs && item.imgs.length >= 3">
+                    <!-- <div class="imgwrap" v-if = "item.imgs !== undefined && item.imgs.length && item.imgs.length > 3"> -->
+                    <div class="imgwrap_left"
+                        v-bind:style="{ 'background-image': 'url(' + item.imgs[0] + ')','background-repeat':'no-repeat','background-size':'cover' }">
+                    </div>
+                    <div class="imgwrap_right">
+                        <div class="imgwrap_right_top"  v-bind:style="{ 'background-image': 'url(' + item.imgs[1] + ')','background-repeat':'no-repeat','background-size':'cover' }">
+                        </div>
+                        <div class="imgwrap_right_bottom" v-bind:style="{ 'background-image': 'url(' + item.imgs[2] + ')','background-repeat':'no-repeat','background-size':'cover' }" style="margin-top: 5px;"></div>
+                        <div v-else>
+                            <div class="imgwrap_left"
+                                v-bind:style="{ 'background-image': 'url(' + item.img + ')','background-repeat':'no-repeat','background-size':'cover' }">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="imgwrap1" v-else>
+                    <div v-bind:style="{ 'background-image': 'url(' + item.img + ')','background-repeat':'no-repeat','background-size':'cover' }">
+                    </div>
+                </div>
+
+
+                <div class="bottomwenzi">
+                    <div class="wenzi" v-if = "item.poi_description">
+                        <span class="tuijian">推荐理由</span>
+                        <span class="btn-down">立即下载</span>
+                    </div>
+                    <div v-else class="wenzi">
+                        <span class="tuijian">百度地图推荐：</span>
+                        <span class="btn-down">立即下载</span>
+                    </div>
+                    <p class="wenzixia" v-if = "item.poi_description">{{item.poi_description}}</p>
+                    <div class="jiage">
+                        <div class="jiage_left" v-if = "item.price">人均价格：{{item.price}}</div>
+                        <div class="jiage_right">
+                            <span v-for = "(ite,ind) in item.tag.split('|').filter(it=>it!='').splice(0,2)" class="spabs">{{ite}}</span>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div style="height: 20px;"> </div>
+            </div>
+        </div>
+        <!-- 用于吸底的div -->
+        <div class="xiding down-apk1" @click="iframeCallup2('baidumap://map/show?src=FCH5shantou')" data-clipboard-text="">
+            <div class="bao">
+                <span class="logo"></span>
+                <span>&nbsp;</span>
+                <span class="btn">百度地图查看详情</span>
+            </div>
+        </div>
+        <!-- 华为vivo搜狗的兼容吸顶 -->
+        <div class="xiding2 down-apk1" @click="iframeCallup2('baidumap://map/show?src=FCH5shantou')" data-clipboard-text="">
+            <div class="bao">
+                <span class="logo"></span>
+                <span>&nbsp;</span>
+                <span class="btn">百度地图查看详情</span>
+            </div>
+        </div>
+
+        <div class="yinsi1">
+            <div class="yinsitop1">
+                <div class="bao">
+                    <div class="banben"></div>
+                    <div class="update"></div>
+                </div>
+
+            </div>
+            <div class="yinsibottom1">
+                <div class="bao">
+                    <div class="kaifazhe"></div>
+                    <div class="yinsi"></div>
+                    <div class="quanxian"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 此div只是用来占位 -->
+        <div class="zuidi" style="height: 1.5rem;"></div>
+    </div>
+
+    <div style="display: none;" id="impscript">
+        <script type="text/javascript" src="https://code.bdstatic.com/npm/jquery@3.2.0/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.bdstatic.com/npm/swiper@4.4.2/dist/js/swiper.js"></script>
+        <script type="text/javascript">
+            var _bdhmProtocol = (('https:' === document.location.protocol) ? 'https://' : ' http://');
+            var srcStr = '%3Cscript src="' + _bdhmProtocol
+                + 'hm.baidu.com/h.js%3F7415c251523287e477161b6b2554e732" type="text/javascript"%3E%3C/script%3E';
+            document.write(unescape(srcStr));
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
+        <script src="../js/url.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script>
+            window.localStorage.removeItem('bangdanid');
+            window.localStorage.removeItem('uid');
+            var uidrander = fc.query.uid;
+            var ua = navigator.userAgent;
+            var urlSearch1 = window.location.search;
+            var isAndroid1 = ua.indexOf('Android') > -1 || ua.indexOf('Linux') > -1;
+            var isIOS1 = !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+            var isSafire1 = isIOS1 && (ua.indexOf('QQBrowser') === -1 && ua.indexOf('UCBrowser') === -1 && ua.indexOf('baiduboxapp') === -1);
+            var app4 = new Vue({
+                el: '#app-4',
+                data: {
+                    flag: false,
+                    bangdanData: null,
+                    hederimg: null,
+                    area: null,
+                    bangdanList:null,
+                    positionIndex:null,
+                    xuanran:null
+
+                },
+                mounted() {
+                    // 监听scroll事件
+                    this.$nextTick(() => {
+                        window.addEventListener('scroll', this.handleScroll, true)
+                    })
+                  
+
+                    // 判断有没有uid这个参数，有的话发ajax
+                    if (urlSearch1.indexOf('uid') > -1) {
+                        $('#app-4').css({ 'display': 'block' });
+                        $.ajax({
+                            type: 'GET',
+                            async: false,
+                            // url:'http://yq01-ns-map392.yq01.baidu.com:8092/iadcchannel/main/poibangdanlist',
+                            url: 'https://integralwall.baidu.com/integralwall/interact/poibangdanlist',
+                            data: {
+                                method: 'getPoiBangdanList',
+                                uid: uidrander
+                            },
+                            // eslint-disable-next-line
+                            // url: 'http://baojia.chelun.com/v2-car-getMasterBrandList.html?_1622443732750',
+                            dataType: 'jsonp',
+                            jsonpCallback: 'callback',
+                            success: (res) => {
+                                // alert(1)
+                                console.log(res)
+                                if (res.status !== '0') {
+                                    $('#app-4').css({ 'display': 'none' });
+                                    $('.wrapbox').css({ 'display': 'block' });
+                                    window.localStorage.setItem("flagshijue","bangdan_index")
+                                } else {
+                                    window.localStorage.setItem("flagshijue","bangdan_new")
+                                    $('#app-4').css({ 'display': 'block' });
+                                    //华为浏览器底部样式兼容
+                                    if (ua.indexOf('HuaweiBrowser') > 1) {
+                                        var childdiv=$('<div class = "didi" style = "bottom:0;background:white;width:100%;height:.8rem;z-index:10;"></div>');
+                                        $('.yinsi1').append(childdiv)
+                                        $('.zuidi').css('margin-top','1px')
+                                        $('.yinsi1').css('z-index',10)
+                                    }
+                                    this.flag = true;
+                                    this.positionIndex = res.data.uid_position -1;
+                                    this.bangdanData = res.data;
+                                    // alert(2)
+                                    this.bangdanList = res.data.detail_info.rank_list.list;
+                                    var ttt = this.bangdanList.slice(this.positionIndex,this.positionIndex+1);
+                                    this.bangdanList.splice(this.positionIndex,1);
+                                    this.xuanran = ttt.concat(this.bangdanList);
+                                    this.hederimg = res.data.detail_info.rank_list.head_img
+                                    this.area = res.data.detail_info.rank_list.list_name
+                                    window.localStorage.setItem('bangdanid',res.data.bd_id)
+                                }
+
+                            },
+                            error: (err) => {
+                                console.log("请求失败")
+                                $('.wrapbox').css({ 'display': 'block' });
+                                window.localStorage.setItem("flagshijue","bangdan_index")
+                            }
+                        });
+                    } else {
+                        // 没有uid显示通用落地页
+                        $('.wrapbox').css({ 'display': 'block' });
+
+                        window.localStorage.setItem("flagshijue","bangdan_index")
+                        $('#app-4').css('display','none')
+                    }
+                },
+
+                methods: {
+                    handleScroll () {
+                        var scrollTop = document.body.scrollTop || document.documentElement.scrollTop ||  window.pageYOffset;
+                        var cardlist = document.querySelectorAll(".bigbox");
+                        var twoTop = cardlist[0].offsetTop;
+                      
+                        if(scrollTop > twoTop) {
+                            if (ua.indexOf('VivoBrowser')=== -1 && ua.indexOf('HuaweiBrowser')=== -1 && ua.indexOf('SogouMSE')=== -1) {
+                                $('.xiding').css('display','block')
+                            } 
+                        } else {
+                            if (ua.indexOf('VivoBrowser')=== -1 && ua.indexOf('HuaweiBrowser')=== -1 && ua.indexOf('SogouMSE')=== -1){
+                                $('.xiding').css('display','none')
+                            }
+                            if (ua.indexOf('VivoBrowser') > -1 || ua.indexOf('HuaweiBrowser')> -1 || ua.indexOf('SogouMSE')> -1 || ua.indexOf('QQBrowser')> -1) {
+                                $('.xiding2').css('display','block')
+                            }
+                           
+                            // $('.xiding').css(' visibility','hidden;')
+                        }
+                    },
+
+
+                    // 点击poi触发的方法
+                    iframeCallup(app, uid) {
+                        window.localStorage.setItem("uid", uid);
+                        if (!isSafire1) {
+                            var ifr = document.createElement('iframe');
+                            ifr.src = app;
+                            ifr.style.display = 'none';
+                            var bodys = document.body || document.getElementsByTagName('body')[0];
+                            bodys.appendChild(ifr);
+                            setTimeout(function () {
+                                bodys.removeChild(ifr);
+                            }, 0);
+                            setTimeout(function () {
+                                if (isAndroid1) {
+                                    window.location.href = 'https://downpack.baidu.com/baidumap_AndroidPhone_1019801e.apk';
+                                } else if (isIOS1) {
+                                    window.location.href = 'itms-apps://itunes.apple.com/cn/app/bai-du-di-tu/id452186370?mt=8';
+                                }
+                            }, 2000);
+                        } else {
+                            setTimeout(function () {
+                                window.location.href = 'https://clientmap.baidu.com/map/maplink.php?openapi=' + encodeURIComponent(app) + '&cburl=' + encodeURIComponent('https://map.baidu.com/zt/client/index/?down=iphone&fr=webapp_callna');
+                            }, 500)
+                        }
+                    },
+                    // 点击页头，浮窗立即下载触发的方法
+                    iframeCallup2(app,isDown) {
+                        console.log(isDown)
+                        if (!isSafire1) {
+                            setTimeout(function(){
+                                var ifr = document.createElement('iframe');
+                                ifr.src = app;
+                                ifr.style.display = 'none';
+                                var bodys = document.body || document.getElementsByTagName('body')[0];
+                                bodys.appendChild(ifr);
+                                setTimeout(function () {
+                                    bodys.removeChild(ifr);
+                                }, 0);
+                            },10)
+                            // alert(isDown)
+                            // 点击头部卡片不下载
+                            if (isDown !=='noDown') {
+                                    setTimeout(function () {
+                                    if (isAndroid1) {
+                                        window.location.href = 'https://downpack.baidu.com/baidumap_AndroidPhone_1019801e.apk';
+                                    } else if (isIOS1) {
+                                        window.location.href = 'itms-apps://itunes.apple.com/cn/app/bai-du-di-tu/id452186370?mt=8';
+                                    }
+                                }, 2000);
+                            }
+                        } else {
+                            // 点击头部卡片不下载
+                            if (isDown !=='noDown') {
+                                setTimeout(function () {
+                                    window.location.href = 'https://clientmap.baidu.com/map/maplink.php?openapi=' + encodeURIComponent(app) + '&cburl=' + encodeURIComponent('https://map.baidu.com/zt/client/index/?down=iphone&fr=webapp_callna');
+                                }, 500)
+                            }
+                          
+                        }
+                        
+                    }
+                },
+            })
+
+
+
+        </script>
+        <script>
+            var currentIndex = -1;
+            // eslint-disable-next-line
+            var swiper = new Swiper('.swiper-container1', {
+                direction: 'vertical',
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+                paginationClickable: true,
+                autoplay: {
+                    delay: 5000,
+                    stopOnLastSlide: false,
+                    disableOnInteraction: false,
+                },
+                loop: true,
+                autoplayDisableOnInteraction: false,
+                spaceBetween: 80,
+                hashnav: false,
+                hashnavWatchState: true,
+                on: {
+                    slideChange: function () {
+                        currentIndex = this.activeIndex;
+                    }
+                }
+            });
+        </script>
+        <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+        <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=HXC8IsDgwu1EgpH3ot89uIMUBohjCcET"></script>
+        <!-- <script type="text/javascript" src="https://pn.baidu.com/uad/uad-sdk-0.0.24.min.js"></script> -->
+        <script src="../js/clipboard.min.js"></script>
+        <script src="../js/bangdan4.js"></script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,684 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+               -moz-user-select: none;
+                /* csshint-disable block-indent vendor-prefixes-sort */
+                -moz-user-focus: none;
+}
+/* 从这里开始这是index落地页的样式 */
+.main {
+    /* display: none; */
+    visibility: hidden;
+}
+.main .map-logo {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo1 {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main .map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+    float: left;
+    margin-left: .933rem;
+}
+/* 新的logo */
+.main .map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+/*content*/
+.main .swiper-container {
+    width: 10rem;
+    height: 9.333rem;
+}
+.main .swiper-container img {
+    width: 9.334rem;
+    height: 9.333rem;
+    float: left;
+    margin-left: .333rem;
+}
+.main .swiper-pagination {
+    float: left;
+    margin-top: 3.5rem;
+}
+/*download*/
+.main .map-download {
+    width: 10rem;
+    float: left;
+}
+.main .download-btn {
+    width: 7.813rem;
+    height: .933rem;
+    margin: 0 auto;
+    margin-top: .633rem;
+    color: #fff;
+    font-size: .507rem;
+    border: 1px solid #3385ff;
+    background-color: #3385ff;
+    border-radius: .467rem;
+    outline: none;
+    text-align: center;
+}
+.main .download-btn a {
+    display: block;
+    width: 7.813rem;
+    height: .933rem;
+    line-height: .933rem;
+    color: #fff;
+    text-align: center;
+}
+.main .download-text {
+    width: 10rem;
+    float: left;
+    text-align: center;
+}
+.main .download-span {
+    font-size: .427rem;
+    color: #3385ff;
+    text-decoration: underline;
+}
+/* 从这开始是红包的样式 */
+.mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .65);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+.mask .redpackage {
+    width: 7.4133rem;
+    height: 11.32rem;
+    background: #f94a4f;
+    border-radius: .37rem;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/hongbaobg1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.mask .redpackage .logo {
+    width: 2.9067rem;
+    height: .8rem;
+    background: url(../img/redlogo.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: .8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mask .redpackage .xiaodu {
+    width: 2.36rem;
+    height: 2.36rem;
+    background: url(../img/du.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.78rem;
+}
+.mask .redpackage .ptop ,
+.mask .redpackage .pbottom {
+    font-size: .6667rem;
+    text-align: center;
+    color: #fbf0b3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.mask .redpackage .ptop {
+    top: 4.78rem;
+}
+.mask .redpackage .pbottom {
+    width: 100%;
+    top: 5.78rem;
+}
+.mask .redpackage .open {
+    width: 2.4rem;
+    height: 2.4133rem;
+    background: url(../img/jinbibi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 7.5rem;
+}
+.mask .redpackage .leftjinbi {
+    width: 1.2267rem;
+    height: 1.48rem;
+    background: url(../img/moneyleft.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -.6rem;
+    top: 4.3rem;
+
+}
+.mask .redpackage .topjinbi {
+    width: .9867rem;
+    height: .8rem;
+    background: url(../img/moneytop.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1rem;
+    top: -.4rem;
+}
+.mask .redpackage .rightjinbi {
+    width: 1.4133rem;
+    height: 1.2533rem;
+    background: url(../img/moneyright.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -.7rem;
+    top: 2.4rem;
+}
+.mask .redpackage .close {
+    width: 1.0133rem;
+    height: 1.0133rem;
+    background: url(../img/guanbi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -14%;
+}
+/* 从这里开始是去app那个红包页面 */
+.goapp {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #f81d42;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.goapp .logoleft {
+    width: 2.9467rem;
+    height: .8133rem;
+    background: url(../img/goapp/logo.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 1.16rem;
+    top: 1.16rem;
+    z-index: 4;
+}
+.goapp .getbg {
+    width: 9.76rem;
+    height: 5.04rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/goapp/shan.png) no-repeat center center;
+    background-size: 100% 100%;
+    top: 7.5%;
+}
+.goapp .getbg .get {
+    width: 5.3867rem;
+    height: 1.3733rem;
+    margin: 0 auto;
+    background: url(../img/goapp/gongxihuode.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: 1rem;
+}
+.goapp .card1 {
+    width: 9.76rem;
+    height: 7.7467rem;
+    background: url(../img/goapp/card1.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4rem;
+    padding-top: .37rem;
+}
+.goapp .card1 .top .left {
+    font-size: 1.58rem;
+    top: .37rem;
+    color: #c61a2f;
+}
+.goapp .card1 .top .right {
+    color: #c61a2f;
+    font-size: .4rem;
+    font-weight: bold;
+}
+.goapp .card1 .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 2.6rem;
+    width: 5.0133rem;
+    height: .5rem;
+    background: url(../img/goapp/huodexianjin.png) no-repeat center center;
+    background-size: 100%;
+}
+.goapp .card1 .btnget {
+    width: 4.3333rem;
+    height: 1.3204rem;
+    position: absolute;
+    left: 50%;
+    top: 3.5rem;
+    transform: translateX(-50%);
+    background: url(../img/goapp/btnbtn.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.goapp .process {
+    width: 100%;
+    height: 12.4267rem;
+    background: url(../img/bian.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 8.4rem;
+}
+.goapp .process .card2 {
+    width: 9.3733rem;
+    height: 7.333rem;
+    border: 2px solid #f7d7a4;
+    border-radius: 5%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.3rem;
+}
+.goapp .process .card2 .rule {
+    width: 4.3333rem;
+    height: .933rem;
+    background: url(../img/goapp/lingquliucheng.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -.424rem;
+    border-radius: 1rem;
+}
+.goapp .process .card2 .step1 {
+    width: 8.6267rem;
+    height: 3.0133rem;
+    background: url(../img/goapp/step1.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .1rem;
+    box-sizing: border-box;
+    padding-top: .5rem;
+    padding-left: .6rem;
+}
+.goapp .process .card2 .jiaoma1 {
+    width: 1.0667rem;
+    height: 1.0667rem;
+    background: url(../img/quan1.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -.22rem;
+    top: -.34rem;
+}
+.goapp .process .card2 .download {
+    font-size: .4533rem;
+    text-align: center;
+    color: #b3121c;
+    font-weight: bold;
+}
+.goapp .process .card2 .ipt {
+    width: 7.5867rem;
+    height: 1.3333rem;
+    background: url(../img/daohang111.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: .13rem;
+    margin-left: .05rem;
+}
+.goapp .process .card2 .step2 {
+    width: 8.6133rem;
+    height: 2.32rem;
+    background: url(../img/goapp/step2.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 4.5rem;
+    border-radius: .1rem;
+    box-sizing: border-box;
+    padding-top: .5rem;
+    padding-left: 1rem;
+    padding-right: .4rem;
+}
+.goapp .process .card2 .jiaoma2 {
+    width: 1.0667rem;
+    height: 1.0667rem;
+    background: url(../img/jiaoma2.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    left: -.22rem;
+    top: -.34rem;
+}
+.goapp .process .card2 .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.goapp .process .card2 .bottom .text {
+    width: 4.4067rem;
+    height: 1.1867rem;
+    color: #b3121c;
+    font-size: .48rem;
+    font-weight: bold;
+}
+.goapp .process .card2 .bottom .goget {
+    width: 2rem;
+    height: 1.9067rem;
+    background: url(../img/kaihongbao.png) no-repeat center center;
+    background-size: 100% 100%;
+    margin-top: -.3rem;
+}
+.goapp .lefttopcoin {
+    width: 1.4rem;
+    height: 1.9067rem;
+    background: url(../img/dabi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1.9rem;
+    left: -3.5%;
+    z-index: 5;
+}
+.goapp .righttopcoin {
+    width: .9333rem;
+    height: 1.0933rem;
+    background: url(../img/goapp/youshangbi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 1.3rem;
+    right: 5%;
+    z-index: 5;
+}
+.goapp .leftcentercoin {
+    width: 1.3867rem;
+    height: 1.4533rem;
+    background: url(../img/goapp/bi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 6rem;
+    left: 3%;
+    z-index: 5;
+}
+.goapp .rightcentercoin,
+.goapp .rightbottomcoin {
+    width: 1.67rem;
+    height: 1.9rem;
+    background: url(../img/goapp/zuobi.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 5;
+}
+.goapp .rightcentercoin {
+    top: 7.1rem;
+    right: -6.2%;
+}
+.goapp .rightbottomcoin {
+    top: 13.1rem;
+    right: -6.2%;
+}
+.goapp .card1 .top {
+    width: 100%;
+    text-align: center;
+    height: 2.1rem;
+}
+/* 这里是一些公共样式 */
+.weixingbox,
+.beidoubox,
+.busbox,
+.subwaybox {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+/* 卫星落地页样式开始 */
+/* wrap是卫星落地页的div */
+.weixingbox,
+.beidoubox {
+    background: url(../img/bigbg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.main1 .map-logo {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .567rem;
+}
+.main1 .top {
+    width: 100%;
+    height: 5.04rem;
+    position: relative;
+    background: rgba(0, 0, 0, .4);
+}
+.main1 .top .icon-baidu {
+    width: .9867rem;
+    height: 1.0133rem;
+    background: url(../img/ditu.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 3.4933rem;
+    top: .7733rem;
+}
+.main1 .logocenter {
+    width: 2.77rem;
+    height: 1.0133rem;
+    background: url(../img/smallcenter.png) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: .7733rem;
+    transform: translateX(-50%);
+}
+.main1 .top .p-top {
+    color: #fff;
+    font-size: 1.2667rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2.0133rem;
+}
+.main1 .top .p-bottom {
+    color: #fff;
+    font-size: .9333rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 3.4533rem;
+}
+.main1 .map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+    float: left;
+    margin-left: .933rem;
+}
+.main1 .map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+.main1 .map-download {
+    width: 10rem;
+    float: left;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 17%;
+}
+.main1 .download-btn {
+    width: 6.48rem;
+    height: 1.3933rem;
+    float: left;
+    /* margin-top: 3.5rem; */
+    color: #fff;
+    font-size: .507rem;
+    background-color: #3385ff;
+    border-radius: .467rem;
+    outline: none;
+    background: url(../img/xiabu.png) no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+.main1 .download-btn a {
+    width: 6.48rem;
+    height: 1.3933rem;
+    border-radius: 16%;
+    display: block;
+}
+/* 卫星落地页的样式结束 */
+/* 公交导航落地页样式开始 */
+.busbox {
+    background: url(../img/busbg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.busbox .download-btn {
+    width: 8.36rem;
+    height: 1.16rem;
+    background: #3285ff;
+    border-radius: .4rem;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.busbox .download-btn a {
+    display: block;
+    width: 8.36rem;
+    height: 1.16rem;
+    line-height: 1.16rem;
+    border-radius: .4rem;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+/* 公交导航落地页样式结束 */
+/* 地铁导航落地页样式开始 */
+.subwaybox {
+    background: url(../img/subwaybg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.subwaybox .topbg {
+    width: 100%;
+    height: 5.04rem;
+    position: relative;
+    background-color: #fff;
+    background: rgba(255, 255, 255, .9);
+}
+.small-logo {
+    width: 2.3067rem;
+    height: .5733rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: .4267rem;
+    background: url(../img/smalllogo1.png) no-repeat center center;
+    background-size: 100%;
+}
+.subwaybox .topbg-top {
+    position: absolute;
+    left: .5467rem;
+    top: 1.6rem;
+    color: #000;
+    font-weight: 700;
+}
+.subwaybox .topbg-bottom {
+    position: absolute;
+    left: 3.2533rem;
+    top: 3.2533rem;
+    font-size: .7733rem;
+    font-weight: 700;
+
+}
+.subwaybox .topbg-top span {
+    color: #4d9ebc;
+}
+.subwaybox .download-btn {
+    width: 8.36rem;
+    height: 1.16rem;
+    background: #3285ff;
+    border-radius: .5rem;
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.subwaybox .download-btn a {
+    display: block;
+    width: 8.36rem;
+    height: 1.16rem;
+    line-height: 1.16rem;
+    border-radius: .5rem;
+    color: #fff;
+    font-size: .7rem;
+    text-align: center;
+}
+/* 地铁导航落地页样式结束 */
+/* 北斗导航落地页样式开始 */
+.beidoubox .download-btn {
+    width: 6.48rem;
+    height: 1.3933rem;
+    background: #3984ff;
+    border-radius: .6667rem;
+    position: absolute;
+    bottom: 17%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.0267rem;
+    background: url(../img/xiabu1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.beidoubox .download-btn a {
+    display: block;
+    width: 6.48rem;
+    height: 1.3933rem;
+    border-radius: .6667rem;
+    color: #fff;
+    font-size: .6rem;
+    text-align: center;
+    line-height: 1.3933rem;
+}
+.beidoubox .top .p-top {
+    color: #fc0;
+    font-size: 1.2667rem;
+}
+.beidoubox .top .p-bottom {
+    color: #fff;
+}

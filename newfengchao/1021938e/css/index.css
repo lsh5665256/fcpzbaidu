@@ -1,0 +1,79 @@
+/*title*/
+.map-logo {
+    width: 10rem;
+    height: 1.333rem;
+    float: left;
+    margin-top: .533rem;
+    margin-bottom: .267rem;
+}
+
+.map-logo img {
+    width: 4rem;
+    height: 1.333rem;
+    float: left;
+    margin-left: 0.933rem;
+}
+
+.map-logo a {
+    width: 2.333rem;
+    height: .733rem;
+    float: left;
+    margin-left: 1.600rem;
+    margin-top: .280rem;
+    text-align: center;
+    line-height: .733rem;
+    font-size: .427rem;
+    color: #333;
+    border: .027rem solid #333;
+    border-radius: .053rem;
+}
+
+/*content*/
+.swiper-container {
+    width: 10rem;
+    height: 9.333rem;
+}
+
+.swiper-container img {
+    width: 9.334rem;
+    height: 9.333rem;
+    float: left;
+    margin-left: .333rem;
+}
+
+.swiper-pagination {
+    float: left;
+    margin-top: 3.5rem;
+}
+
+/*download*/
+.map-download {
+    width: 10rem;
+    float: left;
+}
+
+.download-btn {
+    width: 7.813rem;
+    height: 0.933rem;
+    float: left;
+    margin-left: 1.093rem;
+    margin-top: 1.933rem;
+    color: #fff;
+    font-size: .507rem;
+    border: 1px solid #3385ff;
+    background-color: #3385ff;
+    border-radius: 0.467rem;
+    outline: none;
+}
+
+.download-text {
+    width: 10rem;
+    float: left;
+    text-align: center;
+}
+
+.download-span {
+    font-size: .427rem;
+    color: #3385ff;
+    text-decoration: underline;
+}

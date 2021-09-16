@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+ul {
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+ul li {
+    display: block;
+    width: 30%;
+    /*border: 1px solid red;*/
+    float: left;
+    margin-left: -1%;
+    color: #000;
+    text-align: center;
+}
+p {
+    font-size: 14px;
+    color: #999;
+}
+.thread {
+    width: 0;
+    height: 40px;
+    border: 1px solid #efefef;
+    float: left;
+    margin-top: 8.5%;
+}
+.download-button {
+    width: 100%;
+    float: left;
+    margin-top: 18px;
+    text-align: center;
+}
+.download-button a {
+    display: block;
+    width: 33.33333333333333%;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    float: left;
+    margin-left: 33.33333333333333%;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}

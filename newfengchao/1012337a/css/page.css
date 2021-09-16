@@ -1,0 +1,41 @@
+html,
+body,
+#amap {
+    height: 100%;
+}
+
+/*ç¿»é¡µåŠ¨ç”»*/
+#amap_ul.animating {
+    -webkit-transition: -webkit-transform .4s ease-out;
+            transition: -webkit-transform .4s ease-out;
+    -webkit-transition: transform .4s ease-out;
+            transition: transform .4s ease-out;
+}
+
+/*é¡µé¢èƒŒæ™¯*/
+#amap {
+    background: gradient(linear, left top, left bottom, from(#eaf4ff), to(#d1e7ff));
+    background: -moz-linear-gradient(top, #eaf4ff, #d1e7ff);
+    background: -webkit-gradient(linear, left top, left bottom, from(#eaf4ff), to(#d1e7ff));
+    background-size: contain;
+}
+
+/*pagewrapper*/
+#amap_ul {
+    height: auto;
+}
+/*page*/
+#amap_ul li {
+    position: relative;
+    display: block;
+}
+/*åº•éƒ¨ç®­å¤´*/
+#amap_ul li:before {
+    display: none;
+}
+#amap_ul li.current:before {
+    display: block;
+}
+#amap_ul li:last-child:before {
+    display: none;
+}
